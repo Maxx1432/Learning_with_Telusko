@@ -18,7 +18,7 @@ public class Pascal_With_Recursion {
         }
     }
     public static int pascal(int i, int j){
-        if(i == 0 || j == 0)
+        if(j == 1 || j == i)
             return 1;
         else
             return pascal(i-1,j-1) + pascal(i-1,j);
